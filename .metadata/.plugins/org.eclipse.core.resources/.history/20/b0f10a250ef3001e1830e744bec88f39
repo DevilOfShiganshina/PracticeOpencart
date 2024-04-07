@@ -1,0 +1,15 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class AccountCreationPage extends BasePage {
+	WebDriver driver;
+	public AccountCreationPage(WebDriver driver) { super(driver); }
+
+	@FindBy(xpath="//h1[normalize-space()='Your Account Has Been Created!']") WebElement yourAccountHasBeenCreated;
+	@FindBy(xpath="//a[normalize-space()='Continue']") WebElement continueBtn;
+	
+	if (yourAcc)
+}
